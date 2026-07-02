@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Large Datasets (strictly exclude to avoid Git upload limit errors)
+candidates.jsonl
+sample_candidates.json
+
+# Model Cache (contains ~1.5GB of weights)
+redrob_ranker/models/
+models/
+
+# Generated outputs
+*.csv
+logs/
+redrob_ranker/logs/
+
+# IDE & OS files
+.DS_Store
+.vscode/
+.idea/
+.agents/

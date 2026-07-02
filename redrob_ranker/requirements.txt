@@ -1,0 +1,24 @@
+# Core
+pandas>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0.0
+tqdm>=4.66.0
+
+# Stage 2: BM25
+rank-bm25>=0.2.2
+
+# Stage 3 & 4: Semantic Models (CPU-only)
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+torch>=2.0.0
+
+# Stage 4: Vector Indexing
+faiss-cpu>=1.8.0
+
+# Enterprise API
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.0.0
+
+# Logging & Monitoring
+loguru>=0.7.0
