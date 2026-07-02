@@ -1,22 +1,24 @@
-# Core data processing
+# Core
 pandas>=2.0.0
 numpy>=1.24.0
+pyyaml>=6.0.0
+tqdm>=4.66.0
 
-# BM25 lexical search (Stage 2)
-rank_bm25>=0.2.2
+# Stage 2: BM25
+rank-bm25>=0.2.2
 
-# Sentence Transformers (Stage 3 & 4)
+# Stage 3 & 4: Semantic Models (CPU-only)
 sentence-transformers>=2.7.0
-torch>=2.0.0
 transformers>=4.40.0
+torch>=2.0.0
 
-# FAISS for vector indexing (Stage 4) - CPU version
+# Stage 4: Vector Indexing
 faiss-cpu>=1.8.0
 
-# ONNX Runtime for fast CPU inference (Stage 3)
-onnxruntime>=1.18.0
-optimum[onnxruntime]>=1.20.0
+# Enterprise API
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.0.0
 
-# Utilities
-tqdm>=4.66.0
-pyyaml>=6.0.0
+# Logging & Monitoring
+loguru>=0.7.0
